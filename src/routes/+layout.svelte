@@ -1,23 +1,9 @@
 <script>
-	import { browser } from '$app/environment';
-	import { page } from '$app/stores';
-	import { webVitals } from '$lib/vitals';
 	import Header from './Header.svelte';
-	import './styles.css';
-
-	/** @type {import('./$types').LayoutServerData} */
-	export let data;
-
-	$: if (browser && data?.analyticsId) {
-		webVitals({
-			path: $page.url.pathname,
-			params: $page.params,
-			analyticsId: data.analyticsId
-		});
-	}
+	import "$lib/tailwind.css";
 </script>
 
-<div class="app">
+<div class="main">
 	<Header />
 
 	<main>
@@ -30,21 +16,11 @@
 </div>
 
 <style>
-	.app {
+	main {
+    background-color: var(--main-theme);
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
 	}
 
 	footer {
