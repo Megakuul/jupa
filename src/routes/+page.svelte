@@ -1,15 +1,14 @@
 <script>
 import { Parallax, ParallaxLayer, StickyLayer } from "svelte-parallax";
 import { clamp } from "$lib/util";
+
 import AnimatedLogo from "$lib/components/AnimatedLogo.svelte";
 import AnimatedStockhorn from "$lib/components/AnimatedStockhorn.svelte";
 
 import group_portrait from "$lib/assets/group_portrait.webp";
-
 import thun_icon from "$lib/assets/stadtthun.svg";
 import dsj_icon from "$lib/assets/dsj.svg";
 import okja_icon from "$lib/assets/okja.svg";
-
 import future from "$lib/assets/whyparticipate/future.webp";
 import diversity from "$lib/assets/whyparticipate/diversity.webp";
 import vote from "$lib/assets/whyparticipate/vote.webp";
@@ -67,8 +66,12 @@ let partnerList = [
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>JuPa Thun</title>
+	<meta name="description" 
+  content="Deine Zukunft.
+    Gestalte die Zukunft von Thun mit uns! Im Jugendparlament trägst du an der Entwicklung
+    unserer Stadt bei und kannst echte Veränderungen bewirken." 
+  />
 </svelte:head>
 
 <Parallax sections={3.5} config={{stiffness: 0.7, damping: 0.8}} >
@@ -135,7 +138,9 @@ let partnerList = [
   </div>
 </div>
 
-<hr class="w-4/5 h-2 rounded-xl bg-slate-200 opacity-60 self-center border-none">
+<center>
+  <hr class="w-4/5 h-2 my-20 rounded-xl bg-slate-200 opacity-60 border-none">
+</center>
 
 <div class="flex flex-col items-center justify-around mt-20">
   <h1 class="text-2xl sm:text-5xl text-center my-10">Das offizielle Jugendparlament der Stadt Thun</h1>
@@ -191,5 +196,8 @@ let partnerList = [
         </form>
       </div>
     </div>
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
   </dialog>
 </div>
