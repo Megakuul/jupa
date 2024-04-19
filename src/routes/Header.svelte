@@ -28,7 +28,6 @@
         <li><a class="text-xl font-medium" href="/">Home</a></li>
         <li><a class="text-xl font-medium" href="/news">Aktuelles</a></li>
         <li><a class="text-xl font-medium" href="/about">Über uns</a></li>
-        <li><a class="text-xl font-medium" href="/ideaforum">Ideenforum</a></li>
         <li>
           <summary class="text-xl font-medium">Kontakt</summary>
           <ul class="p-2">
@@ -55,7 +54,6 @@
       <li><a class="text-xl font-medium" href="/">Home</a></li>
       <li><a class="text-xl font-medium" href="/news">Aktuelles</a></li>
       <li><a class="text-xl font-medium" href="/about">Über uns</a></li>
-      <li><a class="text-xl font-medium" href="/ideaforum">Ideenforum</a></li>
       <li>
         <details>
           <summary class="text-xl font-medium">Kontakt</summary>

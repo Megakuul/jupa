@@ -34,7 +34,6 @@
   </nav>
   <nav>
     <h6 class="footer-title">LEGAL</h6>
-    <a class="link link-hover" href="/eu-cookie-policy">Cookie-Richtlinien (EU)</a>
     <a class="link link-hover" href="/privacy-policy">Datenschutzerklärung</a>
     <a class="link link-hover" href="/imprint">Impressum</a>
   </nav>

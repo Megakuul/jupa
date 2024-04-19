@@ -20,3 +20,29 @@
  * @property {string} link
  * @property {string} image
 */
+
+/** @typedef {Object} timelineProperties
+ * @property {string} date
+ * @property {string} title
+ * @property {string} description
+ * @property {number} iconindex
+ * @property {string} image
+*/
+
+/** @typedef {Object} executiveProperties
+ * @property {string} name
+ * @property {string} age
+ * @property {string} description
+ * @property {string} image
+ * @property {boolean} flipped
+*/
+
+/** @typedef {Object} infoProperties
+ * @property {string} title
+ * @property {string} date
+ * @property {string} description
+ * @property {string} image
+ * @property {string} type
+ * @property {boolean} completed
+ * @property {string} link
+*/
